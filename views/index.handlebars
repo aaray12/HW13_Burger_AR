@@ -7,6 +7,8 @@
             <div class = "col-6">
                 {{#each burgers}}
                 {{#unless devoured}}
+                <button class="change-devour" data-id="{{id}}" data-newdevour="{{devoured}}">
+	            Click to Eat!</button>
             </div>
             <div class = "col-6">
                 {{#each burgers}}
