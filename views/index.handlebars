@@ -1,0 +1,26 @@
+<body>
+    <div class = "container-fluid">
+        <h1>Aaron's Burgers</h1>
+    </div>
+    <div class = "container-fluid">
+        <div class = "row">
+            <div class = "col-6">
+                {{#each burgers}}
+                {{#unless devoured}}
+            </div>
+            <div class = "col-6">
+                {{#each burgers}}
+                {{#if devoured}}
+            </div>
+        </div>
+        <div class = "row">
+            <form>
+                <div class="form-group">
+                    <label for="userBurger">Create a Burger!</label>
+                    <input type="password" class="form-control" id="userBurger" placeholder="ex. Double Butter Burger">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
