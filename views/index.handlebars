@@ -4,12 +4,12 @@
     </div>
     <div class = "container-fluid">
         <div class = "row">
-            <div class = "col-6" id = "menu">
-                Menue:
+            <div class = "col-3" id = "menu">
+                Menu:
                 <ul>
                 {{#each burgers}}
                 {{#unless devoured}}
-                <li>
+                <li class = "bList">
                 {{burger_name}}
                 <button class="change-devour" data-id="{{id}}" data-newdevour="{{devoured}}">
 	            Click to Eat!</button>
@@ -19,9 +19,9 @@
                 </li>
                 </ul>
             </div>
-            <div class = "col-6">
+            <div class = "col-3" id = "devoured">
                 Devoured:
-                <ul>
+                <ul id = "dList">
                 {{#each burgers}}
                 {{#if devoured}}
                 <li>
@@ -33,8 +33,8 @@
             </div>
         </div>
         <div class = "row">
-            <form class = "create-form">
-                <div class="form-group">
+            <form class = "create-form" id = "cForm">
+                <div class="form-group" id = "create">
                     <label for="userBurger">Create a Burger!</label>
                     <input type="input" class="form-control" id="userBurger" placeholder="ex. Double Butter Burger">
                 </div>

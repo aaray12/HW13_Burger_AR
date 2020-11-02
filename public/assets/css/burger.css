@@ -1,7 +1,28 @@
 #menu{
-    float: left;
-    color: blue;
+    text-align: center;
+    margin-left: 25%;
+   
 }
 #test{
     color: chocolate;
+    text-align: center;
+}
+#devoured{
+    text-align: center;
+}
+#dList{
+   
+    text-align: left;
+    background-color: rgb(247, 178, 51);opacity:0.6;
+}
+.bList{
+    margin: 5px;
+}
+#create{
+    text-align: center;
+    border-top: 3px solid black;
+}
+#cForm{
+    margin: auto;
+    text-align: center;
 }
