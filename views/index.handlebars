@@ -1,13 +1,12 @@
 
     <div class = "container-fluid">
-        <h1>Aaron's Burgers</h1>
+        <h1 id = "test">Aaron's Burgers</h1>
     </div>
     <div class = "container-fluid">
         <div class = "row">
-            <div class = "col-6">
+            <div class = "col-6" id = "menu">
+                Menue:
                 <ul>
-                
-                {{burner_name}}
                 {{#each burgers}}
                 {{#unless devoured}}
                 <li>
@@ -21,6 +20,7 @@
                 </ul>
             </div>
             <div class = "col-6">
+                Devoured:
                 <ul>
                 {{#each burgers}}
                 {{#if devoured}}
